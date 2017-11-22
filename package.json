@@ -1,0 +1,22 @@
+{
+  "name": "miguh5cli",
+  "version": "1.0.0",
+  "description": "咪咕游戏h5，活动类脚手架工具",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/wuguang855/miguh5cli.git"
+  },
+  "keywords": [
+    "miguh5"
+  ],
+  "author": "wuguang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wuguang855/miguh5cli/issues"
+  },
+  "homepage": "https://github.com/wuguang855/miguh5cli#readme"
+}
