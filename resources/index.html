@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <title><%=  htmlWebpackPlugin.options.data.title  %></title>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="<%= htmlWebpackPlugin.options.data.evn=='development'?'http://h5test.migufun.com:8008/h5/public/basic.js':'http://g.10086.cn/h5/public/basic.js' + '?v=' +htmlWebpackPlugin.options.data.hash %>"></script>
+  </head>
+  <body>
+      <div id="miguApp">
+      </div>
+  </body>
+</html>

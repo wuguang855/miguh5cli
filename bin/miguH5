@@ -1,0 +1,21 @@
+#!/usr/bin/env node
+var fs= require('fs');
+var path = require('path');
+var program = require('commander');
+var miguh5cli = require('../index.js');
+program
+	.version('1.0.0')
+	.usage('<command> [options]')
+	.option('-c, --config [value]', '设置配置文件','./miguh5.config.json')
+	.parse(process.argv);
+var configPath = path.join(process.cwd(),program.config);
+var default_config = JSON.parse(fs.readFileSync(path.join(__dirname,'../default.config.json'), 'utf8'));
+var self_config;
+if(!configPath){
+	miguh5cli(default_config);
+}else if(fs.existsSync(configPath)){
+	self_config = fs.readFileSync(configPath, 'utf8');
+	miguh5cli(self_config);
+}else{
+	console.error(new Error("配置文件不存"));
+};

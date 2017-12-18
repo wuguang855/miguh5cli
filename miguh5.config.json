@@ -1,0 +1,13 @@
+{
+	"appName":"migu_game",
+	"appDescription":"the page for migu-game's activity",
+	"appAuthor":"migu",
+	"h5Id":20,
+	"pages":[
+		{
+			"pageName":"index",
+			"pageTitle":"咪咕游戏",
+			"pageId":99
+		}
+	]
+}

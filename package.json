@@ -3,20 +3,26 @@
   "version": "1.0.0",
   "description": "咪咕游戏h5，活动类脚手架工具",
   "main": "index.js",
+  "bin": {
+    "migu_cli": "./bin/miguH5"
+  },
   "scripts": {
-    "test": "node test.js"
+    "test": "node ./bin/miguH5"
   },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/wuguang855/miguh5cli.git"
   },
   "keywords": [
-    "miguh5"
+    "miguh5 jq ejs"
   ],
-  "author": "wuguang",
+  "author": "WuGuang",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wuguang855/miguh5cli/issues"
   },
-  "homepage": "https://github.com/wuguang855/miguh5cli#readme"
+  "homepage": "https://github.com/wuguang855/miguh5cli#readme",
+  "dependencies": {
+    "commander": "^2.11.0"
+  }
 }

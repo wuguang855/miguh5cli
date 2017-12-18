@@ -1,0 +1,45 @@
+/**
+ * @description: 项目公用样式
+ * @update:
+*/
+@import "basic/variables";
+@import "basic/clear";
+@import "basic/reset";
+
+/*字体图标库*/
+@import "font/iconfont";
+
+/*修改滚动条样式为透明*/
+.hideScroll::-webkit-scrollbar{
+  display: block;
+  width: 0;
+  height: 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+.hideScroll::-webkit-scrollbar-track{
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  border-radius: 0;
+  background-color: transparent;
+}
+.hideScroll::-webkit-scrollbar-thumb{
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 0 0 transparent;
+  background-color: transparent;
+}
+
+/*中英文超长省略号显示*/
+.text-ellipsis{
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+
+
+
+
+
+

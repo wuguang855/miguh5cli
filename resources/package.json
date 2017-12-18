@@ -1,0 +1,51 @@
+{
+  "name": "<appName>",
+  "version": "1.0.0",
+  "description": "<appDescription>",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev:test",
+    "dev:test": "NODE_ENV=development node service/development.js",
+    "dev:prod": "NODE_ENV=production node service/development.js",
+    "build": "npm run build:prod",
+    "build:test": "NODE_ENV=development node build/build.js",
+    "build:gray": "NODE_ENV=preview node build/build.js",
+    "build:prod": "NODE_ENV=production node build/build.js"
+  },
+  "author": "<appAuthor>",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.15.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "connect-history-api-fallback": "^1.3.0",
+    "cross-env": "^3.1.4",
+    "css-loader": "^0.28.7",
+    "ejs-loader": "^0.3.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "http-proxy-middleware": "^0.17.3",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "opn": "^4.0.2",
+    "ora": "^1.1.0",
+    "postcss-loader": "^2.0.9",
+    "phantomjs-prebuilt": "^2.1.14",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "shelljs": "^0.7.6",
+    "sinon": "^1.17.7",
+    "sinon-chai": "^2.8.0",
+    "url-loader": "^0.6.2",
+    "vconsole": "^2.5.2",
+    "webpack": "^3.9.1",
+    "webpack-bundle-analyzer": "^2.2.1",
+    "webpack-dev-middleware": "^1.10.0",
+    "webpack-hot-middleware": "^2.16.1",
+    "webpack-merge": "^2.6.1"
+  }
+}
