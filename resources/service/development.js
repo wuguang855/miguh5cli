@@ -1,3 +1,5 @@
+process.env.EXE_ENV = "run:dev";
+
 var opn = require('opn');
 var path = require('path');
 var express = require('express');
@@ -11,16 +13,11 @@ var _webpackConfig = require('../webpack.config.js');
 
 var webpackConfig = _webpackConfig;
 
-//console.log(webpackConfig);
-
-
 Object.keys(webpackConfig.entry).forEach(function (name) {
   webpackConfig.entry[name] = ['./service/client'].concat(webpackConfig.entry[name]);
   //console.log('webpackConfig.entry[name]',webpackConfig.entry[name]);
 });
-console.log(webpackConfig);
 
-//webpackConfig = 
 var app = express();
 var compiler = webpack(webpackConfig);
 var devMiddleware = require('webpack-dev-middleware')(compiler, {

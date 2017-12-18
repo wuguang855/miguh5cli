@@ -1,13 +1,14 @@
 //以下开始构建页面
+if(process.eve.EXE_ENV=="run:dev"){
+	require('./lib/vconsole.js');
+}
 require('./<pageName>/css/main.scss');
 require('./css/common.scss');
 require('./lib/flexible.js');
 
-
 const $   =  require('jquery');
 const MG  = require('basic');
 const api = require('./<pageName>/api');
-
 
 //初始化经分组件
 var H5_id="<h5Id>";

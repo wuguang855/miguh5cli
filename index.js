@@ -108,7 +108,9 @@ function miguh5cli(_config){
 	}catch(e){
 
 	}
-	_config = JSON.parse(_config);
+	if(typeof(_config)=="string"){
+		_config = JSON.parse(_config);
+	}
 	//创建package.json 文件
 	createPackage(_config);
 	//创建webpack.config.js 文件

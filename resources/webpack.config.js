@@ -74,7 +74,7 @@ var config = function (evn) {
       ]
     },
     plugins:[
-      new webpack.HotModuleReplacementPlugin(),
+      
       new ExtractTextPlugin('./css/[name].[contenthash].css'),
       <HtmlWebpackPlugin>
       
@@ -93,6 +93,16 @@ var config = function (evn) {
       new FriendlyErrorsPlugin()
     ); 
     _config.devtool =  'inline-source-map';
+  }
+  if(process.env.EXE_ENV == "run:dev"){
+    _config.plugins.push(
+       new webpack.HotModuleReplacementPlugin()
+    );  
+    _config.plugins.push(
+      new webpack.DefinePlugin({
+        'process.eve.EXE_ENV': "'run:dev'"
+      })
+    );
   }
   return _config;
 }

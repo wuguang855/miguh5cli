@@ -4,7 +4,7 @@
   "description": "咪咕游戏h5，活动类脚手架工具",
   "main": "index.js",
   "bin": {
-    "migu_cli": "./bin/miguH5"
+    "mgh5cli": "./bin/miguH5"
   },
   "scripts": {
     "test": "node ./bin/miguH5"
