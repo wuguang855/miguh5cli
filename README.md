@@ -39,9 +39,9 @@
 3. appAuthor 为作者信息
 4. h5Id 为此项目的h5_id
 5. pages 为一组页面信息，其中：
-1）pageName 为页面的名称。 不包含 .html
-2）pageTitle 为页面的标题， 会显示为 html的 title属性
-3）pageId 页面的 page_id
+. pageName 为页面的名称。 (不包含 ".html")
+. pageTitle 为页面的标题， 会显示为 html的 title属性
+. pageId 页面的 page_id
 
 ### 在 文件夹下 执行 'mgh5cli' 完成构建
 
