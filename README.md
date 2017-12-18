@@ -47,9 +47,9 @@
 
 ##	关于 mgh5cli 命令
 
-1）mgh5cli -h 打开帮助信息。    		等价于   mgh5cli --help
-2）mgh5cli -V 查看构建工具的版本号 	等价于   mgh5cli --version
-3）mgh5cli -c '配置文件位置'  使用指定的配置文件构建项目（配置文件可以在任意位置，我们建议放在项目文件夹）		
+1. mgh5cli -h 打开帮助信息。    		等价于   mgh5cli --help
+2. mgh5cli -V 查看构建工具的版本号 	等价于   mgh5cli --version
+3. mgh5cli -c '配置文件位置'  使用指定的配置文件构建项目（配置文件可以在任意位置，我们建议放在项目文件夹）		
 等价于   mgh5cli --config
 
 ## 关于项目开发中的命令
