@@ -39,18 +39,18 @@
 3. appAuthor 为作者信息
 4. h5Id 为此项目的h5_id
 5. pages 为一组页面信息，其中：
-	1） pageName 为页面的名称。 不包含 .html
-	2)	pageTitle 为页面的标题， 会显示为 html的 title属性
-	3）	pageId 页面的 page_id
+1）pageName 为页面的名称。 不包含 .html
+2）pageTitle 为页面的标题， 会显示为 html的 title属性
+3）pageId 页面的 page_id
 
 ### 在 文件夹下 执行 'mgh5cli' 完成构建
 
 ##	关于 mgh5cli 命令
 
-	1） mgh5cli -h 打开帮助信息。    		等价于   mgh5cli --help
-	2）	mgh5cli -V 查看构建工具的版本号 	等价于   mgh5cli --version
-	3）	mgh5cli -c '配置文件位置'  使用指定的配置文件构建项目（配置文件可以在任意位置，我们建议放在项目文件夹）		
-		等价于   mgh5cli --config
+1）mgh5cli -h 打开帮助信息。    		等价于   mgh5cli --help
+2）mgh5cli -V 查看构建工具的版本号 	等价于   mgh5cli --version
+3）mgh5cli -c '配置文件位置'  使用指定的配置文件构建项目（配置文件可以在任意位置，我们建议放在项目文件夹）		
+等价于   mgh5cli --config
 
 ## 关于项目开发中的命令
 1. npm run dev    打开开发模式， 等价于  npm run dev:test
