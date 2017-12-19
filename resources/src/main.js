@@ -1,5 +1,5 @@
 //以下开始构建页面
-if(process.eve.EXE_ENV=="run:dev"){
+if(process && process.eve && process.eve.EXE_ENV=="run:dev"){
 	require('./lib/vconsole.js');
 }
 require('./<pageName>/css/main.scss');
