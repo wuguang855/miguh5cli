@@ -41,6 +41,7 @@ function createWebpackConfig (_config){
       							filename: resolve('./dist/${page.pageName}.html'),
 					          	template: './index.html',
 					          	inject: true,
+					          	chunks: ['${page.pageName}']
 						        data:{
 						            evn:evn,
 						            hash:hash,
