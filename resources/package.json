@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm run dev:test",
-    "dev:test": "NODE_ENV=development node service/development.js",
-    "dev:prod": "NODE_ENV=production node service/development.js",
+    "dev:test": "cross-env NODE_ENV=development node service/development.js",
+    "dev:prod": "cross-env NODE_ENV=production node service/development.js",
     "build": "npm run build:prod",
-    "build:test": "NODE_ENV=development node build/build.js",
-    "build:gray": "NODE_ENV=preview node build/build.js",
-    "build:prod": "NODE_ENV=production node build/build.js"
+    "build:test": "cross-env NODE_ENV=development node build/build.js",
+    "build:gray": "cross-env NODE_ENV=preview node build/build.js",
+    "build:prod": "cross-env NODE_ENV=production node build/build.js"
   },
   "author": "<appAuthor>",
   "license": "ISC",
