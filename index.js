@@ -12,11 +12,11 @@ const cwd = process.cwd()
 const dirname = __dirname;
 
 var resource = function (name) {
-	return path.relative(cwd,path.resolve(__dirname,'./resources/'+name));
+	return path.resolve(__dirname,'./resources/'+name)
 }
 
 var cwdPath = function(relaPath){
-	return path.relative(cwd,path.resolve(cwd,relaPath));
+	return path.resolve(cwd,relaPath);
 }
 
 function createPackage(_config){

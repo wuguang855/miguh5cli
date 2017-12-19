@@ -1,13 +1,14 @@
 
 //创建多级文件夹
-
+var path = require('path');
 var fs= require('fs');
 var mkDirs = function(dirpath){
-	var dirArray = dirpath.split('/');
+	var sep = path.sep;
+	var dirArray = dirpath.split(sep);
 	var currentDir="";
 	for(var i=0;i<dirArray.length;i++){
 		var dir = dirArray[i]?dirArray[i]:"";
-		currentDir += dir +"/";
+		currentDir += dir +sep;
 		if (!fs.existsSync(currentDir)) {
             fs.mkdirSync(currentDir);
         }
