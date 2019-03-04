@@ -1,4 +1,4 @@
-# 咪咕游戏H5简易构建工具
+# H5简易构建工具
 
 ## 安装 
 
@@ -19,12 +19,12 @@
 	"pages":[
 		{
 			"pageName":"index",
-			"pageTitle":"咪咕游戏,页面1",
+			"pageTitle":",页面1",
 			"pageId":99
 		},
 		{
 			"pageName":"other",
-			"pageTitle":"咪咕游戏,页面2",
+			"pageTitle":",页面2",
 			"pageId":100
 		}
 	]
